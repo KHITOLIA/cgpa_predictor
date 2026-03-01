@@ -1,7 +1,5 @@
 from flask import Flask, render_template, redirect, request
-import os
 import numpy as np
-import pandas as pd
 import pickle
 
 with open('pipe1.pkl', 'rb') as file:
@@ -32,4 +30,5 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
     
